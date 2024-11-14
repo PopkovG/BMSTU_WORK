@@ -48,4 +48,5 @@ def spis (graph, start, end):
 # Пример поиска кратчайшего пути от вершины 1 к вершине 6
 shortest_distance, shortest_path = spis(graph, 1, 7)
 print("Кратчайшее расстояние:", shortest_distance)
+
 print("Кратчайший путь:", shortest_path)
