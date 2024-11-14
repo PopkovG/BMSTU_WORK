@@ -11,7 +11,7 @@ graph = {
     7: []
 }
 
-def dijkstra(graph, start, end):
+def spis (graph, start, end):
     # Начальная инициализация
     queue = [(0, start)]  # (стоимость, вершина)
     distances = {node: float('inf') for node in graph}
@@ -46,6 +46,6 @@ def dijkstra(graph, start, end):
     return distances[end], path
 
 # Пример поиска кратчайшего пути от вершины 1 к вершине 6
-shortest_distance, shortest_path = dijkstra(graph, 1, 7)
+shortest_distance, shortest_path = spis(graph, 1, 7)
 print("Кратчайшее расстояние:", shortest_distance)
 print("Кратчайший путь:", shortest_path)
