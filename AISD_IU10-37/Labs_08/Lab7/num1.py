@@ -23,6 +23,7 @@ class Graph:
                     dfs_util(neighbor)
 
         dfs_util(start)
+
         return result
 
     # Поиск в ширину (BFS)
