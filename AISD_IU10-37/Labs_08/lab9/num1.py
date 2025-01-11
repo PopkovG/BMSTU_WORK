@@ -44,6 +44,7 @@ def generate_paillier_key():
     mu = mod_inverse(lambda_val, n)
     return (n, g), (lambda_val, mu)
 
+
 def paillier_encrypt(message, public_key):
     """Шифрование числа в криптосистеме Пэйе."""
     n, g = public_key
